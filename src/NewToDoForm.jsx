@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BsPencilFill } from "react-icons/bs";
 
 const NewToDoForm = ({ addTodo }) => {
   const [newItem, setNewItem] = useState("");
@@ -16,10 +17,14 @@ const NewToDoForm = ({ addTodo }) => {
         <label htmlFor="item"></label>
         <input
           value={newItem}
+          placeholder="add a task"
           onChange={(e) => setNewItem(e.target.value)}
           type="text"
           id="item"
         />
+        <button type="submit">
+          <BsPencilFill />
+        </button>
       </div>
     </form>
   );
