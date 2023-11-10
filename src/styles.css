@@ -25,12 +25,7 @@ body {
   border: 2px solid #176e99;
   border-radius: 30px;
   background-color: #00334d;
-
 }
-
-
-
-
 
 .btn {
   background: hsl(200, 100%, 50%, 0.1);
@@ -92,7 +87,7 @@ body {
   width: 100%;
 }
 
-.form-row button{
+.form-row button {
   position: absolute;
   border: 1px solid hsl(200, 64%, 16%);
   background: #00334d;
@@ -105,10 +100,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
-input#item{
+input#item {
   min-width: 150px;
   width: 100%;
 }
@@ -117,14 +111,12 @@ input::placeholder {
   color: white; /* Set the color of the placeholder text */
   font-style: bold;
   font-size: medium;
-   /* Optionally set the font style */
+  /* Optionally set the font style */
 }
 
-
-button:hover{
- border: 1px solid #80b3cc;
+button:hover {
+  border: 1px solid #80b3cc;
 }
-
 
 .new-item-form input:focus {
   border: 1px solid hsl(200, 100%, 70%);
@@ -154,7 +146,6 @@ button:hover{
   list-style: none;
   flex-wrap: wrap;
 }
-
 
 .list li:has(input:checked) label {
   color: hsl(200, 20%, 40%);
@@ -253,14 +244,21 @@ a:hover {
   color: #00aaff;
 }
 
-
-#alert{
+#alert {
   font-size: smaller;
 }
 
-#number{
-  
+#number {
   font-weight: bolder;
   padding-left: 4px;
-  color:#003d5c;
+  color: #003d5c;
+}
+
+@media screen and (max-width: 750px) {
+  /* Styles for screens 750px and below */
+  /* Add your adaptive styles for smaller screens here */
+  #root {
+    width: 250px;
+    min-width: 300px;
+  }
 }
