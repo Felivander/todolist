@@ -6,7 +6,7 @@ const Completed = ({ toDos, toggleToDo, deleteToDo }) => {
   return (
     <>
       {toDos.find((todo) => todo.completed) && (
-        <h1 className="header-completed">Completed {completedTask.length}</h1>
+        <h1 className="header-completed">Completed <span id="number">{completedTask.length}</span></h1>
       )}
 
       <ul className="list completed">
